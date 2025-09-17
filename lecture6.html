@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 6 - Deploy Project | Media Tag | Multipage Website</title>
+</head>
+
+<body>
+    <h1>Lecture 6</h1>
+    <h2>Topics: Deploy Your First Project | Media Tag | Multi Page Website</h2>
+    <p>In this lecture, we will learn about deploying a project, using media tags, and creating a multi-page website.</p>
+
+    <h2>1️⃣ Why HTML Media?</h2>
+    <p>Browsers used plugins (Flash, Silverlight) → Inefficient & Insecure.<br>
+       Solution → HTML5 <strong>&lt;video&gt;</strong> & <strong>&lt;audio&gt;</strong> Tags.</p>
+
+    <h2>2️⃣ Basic Video Embed</h2>
+    <pre>
+&lt;video src="video.mp4" controls&gt;&lt;/video&gt;
+    </pre>
+
+    <h3>Common Attributes:</h3>
+    <pre>
+width="640" height="360"
+autoplay muted controls
+loop poster="thumb.jpg"
+    </pre>
+
+    <h2>3️⃣ Audio Embed</h2>
+    <pre>
+&lt;audio src="theme.mp3" controls&gt;&lt;/audio&gt;
+    </pre>
+
+    <h2>4️⃣ Multiple Sources for Compatibility</h2>
+    <pre>
+&lt;video controls&gt;
+  &lt;source src="video.webm" type="video/webm"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Sorry, your browser doesn't support video.
+&lt;/video&gt;
+    </pre>
+
+    <h2>5️⃣ Accessibility (Subtitles & Captions)</h2>
+    <pre>
+&lt;video controls&gt;
+  &lt;source src="vid.mp4"&gt;
+  &lt;track src="captions.vtt" kind="captions" srclang="en" label="English"&gt;
+&lt;/video&gt;
+    </pre>
+
+    <h2>6️⃣ Comparison of Methods</h2>
+    <pre>
+| Feature      | &lt;source&gt; Method | src Attribute |
+|------------- |-----------------------|-------------  |
+| Compatibility| Excellent             | Good          |
+| Simplicity   | Complex               | Simple        |
+| Fallback     | Yes                   | No            |
+    </pre>
+
+    <h2>7️⃣ Special Symbols (HTML Entities)</h2>
+    <pre>
+© → &copy; or &#169;
+® → &reg; or &#174;
+™ → &trade; or &#8482;
+&lt; → &lt;
+&gt; → &gt;
+&amp; → &amp;
+    </pre>
+
+    <h2>📊 Folder Structure Example</h2>
+    <pre>
+root/
+├── index.html
+├── video.mp4
+├── theme.mp3
+├── captions.vtt
+└── images/
+    └── thumbnail.jpg
+    </pre>
+
+    <hr>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NGYp1zCBthk" frameborder="0" allowfullscreen></iframe>
+
+    <p><a href="lecture5.html">⬅️ Previous: Lecture 5</a></p>
+    <p><a href="index.html">🏠 Back to Home</a></p>
+
+</body>
+
+</html>

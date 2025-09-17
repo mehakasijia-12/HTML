@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 5 - HTML Forms</title>
+</head>
+
+<body>
+    <h1>Lecture 5: HTML Forms</h1>
+    <p>This lecture covers HTML Forms and how they are used to collect user data and send it to the server.</p>
+
+    <h2>1️⃣ Basic Input Fields</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="99"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>2️⃣ Radio Buttons (Choose One)</h2>
+    <form>
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+    </form>
+
+    <h2>3️⃣ Checkboxes (Choose Many)</h2>
+    <form>
+        <label>Toppings:</label><br>
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+
+        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label><br><br>
+    </form>
+
+    <h2>4️⃣ Textarea (Long Text)</h2>
+    <form>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+    </form>
+
+    <h2>5️⃣ Dropdown Select</h2>
+    <form>
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="">--Select--</option>
+            <option value="in">India</option>
+            <option value="us">USA</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+    </form>
+
+    <h2>6️⃣ Specialized Inputs</h2>
+    <form>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="color">Choose Color:</label><br>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="file">Upload File:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+    </form>
+
+    <h2>7️⃣ Buttons</h2>
+    <form>
+        <button type="submit"><strong>Submit</strong> Form</button>
+    </form>
+
+    <h2>8️⃣ Example Data Sent to Server</h2>
+    <p><code>name=John&age=25&gender=male&toppings=pepperoni&mushrooms&comments=Great+site&country=us&dob=2000-01-01</code></p>
+
+    <hr>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/a4j9R_DvZ8M" frameborder="0" allowfullscreen></iframe>
+
+    <p><a href="lecture4.html">⬅️ Previous: Lecture 4</a></p>
+    <p><a href="lecture6.html">➡️ Next: Lecture 6 - Deploy Project + Media Tag + Multipage Website</a></p>
+    <p><a href="index.html">🏠 Back to Home</a></p>
+
+</body>
+
+</html>
